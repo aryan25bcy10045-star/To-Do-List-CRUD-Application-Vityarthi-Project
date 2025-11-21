@@ -1,31 +1,29 @@
-# Project Title:    To-Do List Task Manager
+# Project Title:  To-Do List Task Manager
 
 
 # Overview of the Project
 
-Hi there! This is a simple, straightforward (To-Do List application) built as a Python desktop utility. The entire project is housed in a single Python file, designed to give you a clean, graphical interface for managing your daily tasks.
+Hello! This is a very simple and basic (To-Do List application) made as a Python desktop utility. The whole project is contained in one single Python file and it aims to provide you with a neat and graphical user interface for the administration of your daily chores.
 
-I developed this application using clear (Object-Oriented Programming (OOP)) principles. The goal was to keep the core logic (handling the tasks—adding, deleting, updating) completely separate from the user interface (the buttons and lists). This separation makes the code easy to maintain and expand later on. Think of it as having a dedicated "Task Manager" object running quietly in the background, only communicating with the "Window" object when it needs to show or change something.
+I used the clean (Object-Oriented Programming (OOP)) method when developing this application. The core logic (dealing with the tasks—adding, deleting, updating) was completely separated from the user interface (the buttons and lists) which was the goal. This division eases the underground and later on expansion of the code. Imagine it like you have a "Task Manager" object as a background service that only interacts with the "Window" object if it needs to display something or change it.
 
-Right now, the tasks are stored (in memory) (they disappear when you close the app), but it's built to be easily upgraded for persistent storage later on!
-
-
+Currently, the tasks are kept (in temporary memory) (they are lost once the application is closed) but it is made easy to add the necessary features for persistent storage in the future!
 
 # Features
 
-The application provides a full set of management tools necessary to handle your tasks efficiently:
+This application mocks up the entire process that the users would require to manage the their tasks:
 
-1- Task Creation: Quickly add a new task using the input field and the ("➕ Add Task") button (or just press {Enter}).
+1- Task Creation: There is an input field and an ("➕ Add Task") button (or just press {Enter}) to quickly add a new task.
 
-2- Intuitive Display:** View all tasks in a scrollable list, each labeled with a unique {ID} for easy reference and management.
+2- Intuitive Display:** All the tasks are displayed in a vertical list that can be scrolled through and where each task has been given its unique {ID} tag for easy reference and management.
 
-3- Status Tracking: Easily toggle a task as complete or incomplete using the {"🔁 Toggle Status"} button. Completed tasks are marked with a {'✅'} icon.
+3- Status Tracking: Using the {"🔁 Toggle Status"} button you can very easily mark a task as done or undone. The completed tasks have a {'✅'} icon next to them.
 
-4- Editing: Click {"✏️ Edit Description"} to pop up a small dialog box, letting you quickly correct typos or update details without re-entering the entire task.
+4- Editing: With the help of the {"✏️ Edit Description"} you can get a small dialog box that will allow you to quickly fix any mistakes or give updates without having to re-enter the entire task.
 
-5- Deletion:** Permanently remove tasks with the {"🗑️ Delete Task"} button.
+5- Deletion:** Using the {"🗑️ Delete Task"} button you can make the task deleted permanently.
 
-6- Error Handling: Built-in checks prevent you from adding blank tasks or attempting to modify/delete tasks when nothing is selected, guiding the user with simple warning messages.
+6- Error Handling: Safety checks are in place so that you will not be able to add an empty task or try
 
 
 
@@ -33,59 +31,59 @@ The application provides a full set of management tools necessary to handle your
 # Technologies/Tools Used
 
 
-This project uses a minimal, standard Python setup, meaning there are no complex third-party dependencies to install!
+The project brings along a basic, common Python configuration which makes the installation of dependencies not being a problem at all, since there are none!
 
 
-1- Core Language: (Python 3.x)
+1- Primary Language: (Python 3.x)
 
-2- GUI Framework: (Tkinter) (Python’s built-in standard library for creating desktop applications).
+2- GUI Framework: (Tkinter) (Python's standard library for building desktop applications).
 
-3- Libraries: All other functionality relies on standard Python library components (`tkinter.messagebox`, `tkinter.simpledialog`, etc.).
+3- Libraries: The remaining features depend on Python's standard library modules (`tkinter.messagebox`, `tkinter.simpledialog`, etc.).
 
 
 
 # Steps to Install & Run the Project
 
-Since this project relies only on Python's standard library, setup is quick and easy!
+As this project is based only in Python's standard library, the installation is fast and simple!
 
 1. Prerequisites
 
-You must have (Python 3.x) installed on your system (version 3.6 or newer is ideal).
+Ensure that (Python 3.x) is installed on your machine (the recommended version is 3.6 or higher).
 
-2. Download the Code
+2. Get the Code
 
-1.  Clone this repository or download the source code file (`to do list.py`, assuming you saved the code in a single file).
+1. Clone this repository or download the file containing the source code (`to do list.py`, assuming you stored the code in one single file).
 
-3. Run the Application
+3. Launch the Program 
 
-1.  Open your command line interface (Terminal, PowerShell, etc.).
-2.  Navigate to the directory where you saved the Python file.
-3.  Execute the script using the Python interpreter:
+1. Open command prompt {TERMINAL}. 
+2. Change the location of directory where the Python file is stored. 
+3. Run the script using the Python interpreter: (IDLE) 
 
     ```bash
     python to do list.py
     ```
 
-4.  The To-Do List window should pop up instantly!
+4. The To-Do List window will appear immediately after execution
 
 
 
 # Instructions for Testing
 
-To ensure the application is running correctly, manually test the following core scenarios.
+To verify that everything is working as they should, perform the following tests scenarios manually.
 
 | Test Case | Steps to Execute | Expected Outcome |
 
-1- Add a Task:-  Type "Finish README" into the input box and press {Enter} (or click the 'Add Task' button).  The task appears immediately in the list below with a unique ID and no '✅'. 
+1- Add a Task:-  Enter "Finish README" in the input box and hit {Enter} (or mouseclick 'Add Task' button).  The task comes up instantly in the lower list with an ID assigned and no '✅'.
 
-2- Toggle Status:-  Select the task you just added. Click the {"🔁 Toggle Status"} button. The task entry should now show the {'✅'} icon, indicating completion. 
+2- Toggle Status:-  Click on the task you just made. Press the {"🔁 Toggle Status"} button. The task now would be having '✅' icon, confirming that it is completed.
 
-3- Edit a Task:-  Select a task. Click {"✏️ Edit Description"}. Change the text and click OK. The listbox entry updates instantly with the new description.
+3- Edit a Task:-  Select a task and click {"✏️ Edit Description"}. Enter the new text and click OK. The list will shows instantly with the new description updated.
 
 4- Delete a Task:-  Select any task. Click {"🗑️ Delete Task"}. The selected task disappears completely from the list. 
 
-5- Input Validation:-  Click the {"➕ Add Task"} button while the input box is completely empty.  
-[Warning]:- A message box pops up, and no new task is added.
+5- Input Validation:-  Click the {"➕ Add Task"} button while the input box is completely empty it will add task.  
+[Warning]:- A message box pops up, and no new task is added again the program is run.
 
 6- No Selection Error:-  Ensure no task is highlighted. Click the {"🗑️ Delete Task"} button.  [Warning]:- A message box pops up, asking you to select a task first. 
 
