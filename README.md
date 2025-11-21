@@ -1,4 +1,4 @@
-# Project Title:  To-Do List Task Manager
+# Project Title:  To-Do List CRUD Application
 
 
 # Overview of the Project
